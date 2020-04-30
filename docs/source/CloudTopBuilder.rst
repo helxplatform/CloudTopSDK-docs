@@ -4,6 +4,7 @@ CloudTopBuilder
 The CloudTopBuilder is a python 3 code which reads a yaml description of a desired docker image and creates a corresponding docker build file. Once the build file is produced, it is an input to the normal docker build command.  The tags supported by the CloudTopBuilder are described below, but please see the examples in the CloudTopBuilder repository (https://github.com/helxplatform/CloudTopSDK.git) and in the Examples section of this documentation.
 
 *Usage*
+
 * The CloudTopBuilder requires only one argument, which specifies the yaml file. It is important that the executable be called in the same directory that includes the script files specifed in the yaml. To clone the repo, and try the napari example, execute these commands::
 
    cd yourRepoDir
