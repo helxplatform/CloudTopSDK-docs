@@ -162,7 +162,14 @@
 </pre></div>
 </div>
 </li>
+<li><p>By default the CloudTopBuilder will use heliumdatastage/cloudtop:develop-latest as the base image. If you prefer you can add a second argument to the command which will specify a different dockerhub label. For example the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">../../</span><span class="n">CloudTopBuilder</span><span class="o">.</span><span class="n">py</span> <span class="n">napari</span><span class="o">.</span><span class="n">yml</span> <span class="n">develop</span><span class="o">-</span><span class="n">v0</span><span class="o">.</span><span class="mf">0.4</span>
+</pre></div>
+</div>
+</li>
 </ul>
+<p>will use heliumdatastage/cloudtop:develop-v0.0.4 as the base image. For a complete list of tags, see:</p>
+<p><a class="reference external" href="https://hub.docker.com/repository/docker/heliumdatastage/cloudtop/tags">https://hub.docker.com/repository/docker/heliumdatastage/cloudtop/tags</a></p>
 <p>This will produce a Docker.napari file and a “generated” directory that can be deleted once the docker image has been built.</p>
 <p><em>output</em></p>
 <ul class="simple">

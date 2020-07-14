@@ -12,6 +12,15 @@ The CloudTopBuilder is a python 3 code which reads a yaml description of a desir
    cd CloudTopSDK/example/napari
    ../../CloudTopBuilder.py napari.yml
 
+*  By default the CloudTopBuilder will use heliumdatastage/cloudtop:develop-latest as the base image. If you prefer you can add a second argument to the command which will specify a different dockerhub label. For example the command::
+
+   ../../CloudTopBuilder.py napari.yml develop-v0.0.4 
+
+will use heliumdatastage/cloudtop:develop-v0.0.4 as the base image. For a complete list of tags, see::
+
+https://hub.docker.com/repository/docker/heliumdatastage/cloudtop/tags
+
+
 This will produce a Docker.napari file and a "generated" directory that can be deleted once the docker image has been built.
 
 *output*
